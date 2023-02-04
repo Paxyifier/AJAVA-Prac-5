@@ -10,5 +10,6 @@ public class App {
 
         JdbcTemplate jdbcTemplate = context.getBean("JdbcTemplate", JdbcTemplate.class);
         EmployeeDAO employeeDAO = new EmployeeDAO(jdbcTemplate);
+        System.out.println("Employee: "+employeeDAO.getEmployees("Prathamesh Ingale"));
     }
 }
